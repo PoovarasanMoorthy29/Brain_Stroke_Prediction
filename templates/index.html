@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Stroke Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2em; text-align: center; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        form { background: white; padding: 2em; border-radius: 10px; display: inline-block; }
+        input[type=file], input[type=submit] { padding: 0.5em; margin-top: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Brain Stroke Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
